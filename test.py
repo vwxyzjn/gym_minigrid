@@ -37,7 +37,7 @@ env = Monitor(env, f'videos', force=True)
 env.action_space.seed(0)
 env.reset()
 for i in range(10000):
-    env.render()
+    # env.render()
     action = env.action_space.sample()
     next_obs, reward, done, info = env.step(action)
     if done:
